@@ -26,7 +26,7 @@ const productRemplazo = {
     stock: 10,
 }
 const run = async () => {
-    try{
+    try {
     const products = new ProductManager("./entregables/products.json")
     await products.addProduct(product1)
     await products.addProduct(product2)
@@ -35,8 +35,6 @@ const run = async () => {
     await products.updateProduct(2, productRemplazo)
     console.log("segunda consulta", await products.getProducts())
     console.log("byId", await products.getById(2))
-    // await products.deleteById(2)
-    // await products.deleteAll()    
     }
     catch{
         console.log("Not Found")
