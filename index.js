@@ -40,4 +40,4 @@ const run = async () => {
         console.log("Not Found")
     }
 }
-run()
+main()
